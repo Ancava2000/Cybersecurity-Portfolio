@@ -1,5 +1,7 @@
 # Controls and compliance checklist
- 
+## Case study
+This is based on a fictional company.
+
 Botium Toys is a small U.S. business that develops and sells toys. The business has a single physical location, which serves as their main office, a storefront, and warehouse for their products. However, Botium Toy’s online presence has grown, attracting customers in the U.S. and abroad. As a result, their information technology (IT) department is under increasing pressure to support their online market worldwide.  
 
 The manager of the IT department has decided that an internal IT audit needs to be conducted. She's worried about maintaining compliance and business operations as the company grows without a clear plan. She believes an internal audit can help better secure the company’s infrastructure and help them identify and mitigate potential risks, threats, or vulnerabilities to critical assets. The manager is also interested in ensuring that they comply with regulations related to internally processing and accepting online payments and conducting business in the European Union (E.U.).    
@@ -99,3 +101,5 @@ __Compliance checklist__
 | No | Sensitive data (PII/SPII) is confidential/private. | Encryption is not currently used. |
 | Yes | Data integrity ensures the data is consistent, complete, accurate, and has been validated. | Data integrity is implemented. |
 | No | Data is available to individuals authorized to access it. | Data is available to all employees. The access to data needs to be limited by the individual’s job. |
+
+# Recommendations
