@@ -1,4 +1,4 @@
-# Controls and compliance checklist
+# $\color{Cyan}{Controls\ and\ compliance\ checklist}$
 ## Case study
 This is based on a fictional company.
 
