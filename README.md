@@ -67,4 +67,4 @@ This portfolio will be continuously updated with new projects and courses, so I 
 - Continue participating in CTF.
 - and more!
 
-If you want more information, here it is my [Linkedin](www.linkedin.com/in/ana-carro-)
+If you want more information, here it is my [Linkedin](https://www.linkedin.com/in/ana-carro-/)
