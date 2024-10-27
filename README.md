@@ -57,3 +57,14 @@ Tools used in the course:
 - Python.
 - Jupyter Notebook.
 - Incident handler's journal.
+
+## More in the future!
+
+This portfolio will be continuously updated with new projects and courses, so I would appreciate if you visit it again in the future!. Some of the projects I plan to complete are:
+- Set up a home lab for a SIEM tool.
+- Create a fishing attack simulation.
+- Monitor intrusions with OSSEC in a home lab.
+- Continue participating in CTF.
+- and more!
+
+If you want more information, here it is my [Linkedin](www.linkedin.com/in/ana-carro-)
