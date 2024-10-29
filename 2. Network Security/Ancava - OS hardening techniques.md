@@ -68,12 +68,30 @@ This reading explains how to identify the brute force attack using tcpdump.
 
 **Section 1: Identify the network protocol involved in the incident**
 
-
+The network protocol involved in the incident is the HTTP protocol, commonly associated with port 80, as it is used for unencrypted HTTP traffic. Since the issue occurs when accessing the legitimate website's web server, it is known that these requests to web servers for internet pages are made via the HTTP protocol. By analyzing the traffic logs from tcpdump, it can be observed that a file is downloaded using an HTTP method, which redirects the user to the website containing the malware.
 
 **Section 2: Document the incident**
 
+An attacker gained access to the web host of the company yummyrecipesforme.com through a brute force attack. With administrator credentials, they modified the website's source code, inserting a JavaScript function that prompted visitors to download and run a file upon entering the site. That file redirected the clients to a fake version of the website that contains the malware. 
+
+Several hours after the attack, some customers complained that the site had asked them to download a file to update the browser. Customers reported that after executing the file, the web address changed, and their computers began to slow down.
+
+The cybersecurity analysts team, in a test environment, observed the suspicious behavior of the site: upon accessing yummyrecipesforme.com, they were prompted to download a file to "update the browser." Running the file redirected the browser to a fake version of the site, greatrecipesforme.com, which contained the malware.
+
+Activity logs confirmed the attack. The browser made DNS and HTTP requests that first led to yummyrecipesforme.com and then, once the file was downloaded, redirected to greatrecipesforme.com, revealing the malicious nature of the code.
+
+A senior analyst reviewed the source code and verified that the JavaScript injected into the compromised site triggered the download of the infected file and the redirection. Analysis of the downloaded file showed a script that automated redirection to the fake version of the site, confirming the malicious manipulation of the original website.
 
 
 **Section 3: Recommend one or more remediations for brute force attacks**
 
+To protect against brute force attacks, several recommendations can be made:
+
+1. Do not allow the use of previously used passwords. Since the attacker exploited this vulnerability by testing several default passwords, it is important to prevent old passwords from being used as the default.
+  
+2. Establish frequent password updates.
+
+3. Enable two-factor authentication (2FA). This provides two forms of authentication, both a password and a one-time passcode sent to an email or phone.
+
+4. Finally, login attempts can also be limited, as a brute force attack involves testing multiple password combinations.
 
