@@ -64,7 +64,7 @@ This reading explains how to identify the brute force attack using tcpdump.
 | TCP flag codes | ```Flags [S]``` - Connection Start <br /> ```Flags [F]``` - Connection Finish <br /> ```Flags [P]``` - Data Push <br /> ```Flags [R]``` - Connection Reset <br /> ```Flags [.]``` - Acknowledgment |
 | Browser downloading malware | 14:18:36.786589 ```IP your.machine.36086``` > ```yummyrecipesforme.com.http:``` ```Flags [P.]``` (a), seq 1:74, ack 1, win 512, options [nop,nop,TS val 3302576859 ecr 3302576859], length 73: ```HTTP: GET``` (b) / ```HTTP/1.1``` (c) <br /><br /> a: Data push acknowlegded <br /> b: The browser is requesting data from yummyrecipesforme.com with the HTTP: GET method <br /> c: using HTTP protocol version 1.1 |
 
-## Analysis
+## Security incident report
 
 **Section 1: Identify the network protocol involved in the incident**
 
