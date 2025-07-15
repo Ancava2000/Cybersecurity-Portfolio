@@ -1,7 +1,7 @@
-# Proving Grounds Play: DriftingBlues6 Walkthrough
-## _Learn step by step how to find the Offsec DriftingBlues6 lab flag._
+# $\color{Magenta}{Proving\ Grounds\ Play:\ DriftingBlues6\ Walkthrough}$
+## $\color{Magenta}{Learn\ step\ by\ step\ how\ to\ find\ the\ Offsec\ DriftingBlues6\ lab\ flag}$
 
-### **Access to the machine**
+### $\color{Cyan}{Access\ to\ the\ machine}$
 
 First you must download the Offsec vpn, which is downloaded under the name universal.ovpn. Once downloaded, type _“sudo openvpn universal.ovpn”_ to access the vpn and so be able to connect to the machine we are going to hack (any errors and questions with this process can be resolved on the Offsec page itself).
 ![image 1](https://miro.medium.com/v2/resize:fit:1100/format:webp/0*HUZI6RL9GDIbxDc1)
@@ -9,7 +9,7 @@ First you must download the Offsec vpn, which is downloaded under the name unive
 You can check that you are connected when the VPN logo is green.
 ![image 2](https://miro.medium.com/v2/resize:fit:720/format:webp/0*xeQCPLy6oO_8n3CI)
 
-### **IP Enumeration**
+### $\color{Cyan}{IP\ Enumeration}$
 
 In another terminal (it is important to leave open the one that maintains the vpn connection) the basic process of any pentesting is started with its first step: **enumeration**. For this purpose **nmap** is used, which scans the services and open ports of a device.
 ![image 3](https://miro.medium.com/v2/resize:fit:720/format:webp/0*masb_OkNB1pC0MrH)
@@ -19,7 +19,7 @@ This is the first step because it shows you the services, and even their version
 As can be seen in the screenshot, port **80** appears as open, which indicates an application on the Internet **(HTTP)**. Therefore, we are going to search on the internet for the ip itself, showing this web page.
 ![image 4](https://miro.medium.com/v2/resize:fit:720/format:webp/0*pudqVmxzY6jp1j9N)
 
-### **Website Enumeration**
+### $\color{Cyan}{Website\ Enumeration}$
 Once the ip address is scanned, the second step would be to scan and enumerate the web page itself. In a web page you can find directories and files with vulnerabilities such as configuration errors, causing these supposedly hidden files and directories to be shown.
 
 In order to find all the directories and files that a website has, you can use tools such as **dirbuster, dirsearch, gobuster...**
@@ -50,7 +50,7 @@ You must indicate the type of attack with **“dir ”**, the target with **“-
 
 If you search the **spammer** directory, a .zip file is downloaded directly.
 
-### **Cracking .zip passwords**
+### $\color{Cyan}{Cracking\ .zip\ passwords}$
 
 In this .zip file there’s a text file called creds which is encrypted (a password is needed to extract it).
 
@@ -70,7 +70,7 @@ It should be noted that since I had cracked it previously, I get the following m
 
 With this password you can now extract the text file, which contains the credentials for the login page seen above.
 
-### **Web Site Vulnerabilities**
+### $\color{Cyan}{Web\ Site\ Vulnerabilities}$
 
 Once inside the **textpattern** page (which is like a wordpress), you must find its vulnerabilities. In this case, the application used and its version are indicated at the bottom of the page.
 
@@ -86,7 +86,7 @@ As a tip, if you know the code used to write the exploit (either in C, python…
 
 Another tip is that you can directly download the exploit by typing _“searchsploit -m <exploit_code>”._
 
-### **Reverse Shell PHP**
+### $\color{Cyan}{Reverse\ Shell\ PHP}$
 
 In this first exploit, **Remote code execution (Authenticated) (2)**, with id **49620**, it is explained that an authenticated user can execute code remotely after uploading a .php file to the textpattern page. As this exploit only consists in the fact that a php file can be uploaded, we can upload any file we want from the textpattern page itself.
 
@@ -118,7 +118,8 @@ In the Shell you can see that you have connected to the target machine, you can 
 
 Inside this shell you can find the flag. We start searching in the home directory to see which users there are, but finding none, it is deduced that the flag it’s in the root user. So now we must elevate privileges to be able to enter the root directory.
 
-### **Shell Enumeration and Privilege Escalation**
+### $\color{Cyan}{Shell\ Enumeration\ and\ Privilege\ Escalation}$
+
 In this step we make our **third enumeration, of the target machine itself.**
 
 First you must know its version in order to find the appropriate exploit. This is done with _“uname -a”._
