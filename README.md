@@ -29,6 +29,11 @@ Finally, this course has prepared me to be able to work in entry-level positions
 - Security analyst.
 - Security operations center (SOC) analyst.
 
+On the other hand, I will showcase the cybersecurity walkthroughs I've made while completing practical exercises in Offsec and TryHackMe. Some examples are:
+- Proving Grounds Play: Dawn Walkthrough.
+- Pickle Rick.
+- and more...
+
 ## Skills
 
 In each module I have learned a series of important skills for a job in cybersecurity: 
