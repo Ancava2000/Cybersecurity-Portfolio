@@ -4,7 +4,7 @@
 </div>
 
 > [!NOTE]  
-> This portfolio is currently composed of practical exercises from the ```Google Cybersecurity course```. In the future, additional personal projects or projects from other courses will be added to the modules.
+> This portfolio is currently composed of practical exercises from the ```Google Cybersecurity course``` and ```Cybersecurity Walkthroughs```. In the future, additional personal projects or projects from other courses will be added to the modules.
 
 ## Professional Resume
 
@@ -12,7 +12,7 @@ My name is Ana Carro Vázquez, and I am currently studying in the ```42 Málaga 
 
 Furthermore, I am proactively continuing my education digitally. I have completed the ```Google Cybersecurity Professional Certificate course``` and ```Cisco’s Junior Cybersecurity Analyst course```, along with additional courses in Python and Bash automation, cyber intelligence, SQL, cloud computing, among others. My main goal is to work as a SOC Analyst, an ideal role for me as it requires communication skills, proactivity, adaptability, and ongoing learning.
 
-In 2024, I intend to continue my training by working on more cybersecurity projects, completing the 42 cursus, developing my GitHub, and studying the ```SOC Analyst Path``` on Hack the Box.
+In 2025, I intend to continue my training by working on more cybersecurity projects, completing the 42 cursus, developing my GitHub, and studying the ```SOC Analyst Path``` on Hack the Box.
 
 ## Portfolio Contents
 
@@ -62,6 +62,15 @@ Tools used in the course:
 - Python.
 - Jupyter Notebook.
 - Incident handler's journal.
+
+Tools used in the walkthroughs:
+- Nmap.
+- Gobuster.
+- Dirsearch
+- Netcat.
+- Johntheripper.
+- Hydra.
+- Reverse Shells.
 
 ## More in the future!
 
