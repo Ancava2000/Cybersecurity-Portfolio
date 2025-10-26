@@ -54,6 +54,7 @@ On the other hand, in the walkthroughs I have used;
 | Dawn | ```nmap``` ```gobuster``` ```netcat``` ```SUID``` |
 | DriftingBlues6 | ```dirsearch``` ```zip2john``` ```johntheripper``` ```searchsploit``` |
 | Gaara | ```nmap``` ```gobuster``` ```hydra``` ```SUID``` |
+| Pickle Rick | ```nmap``` ```dirsearch``` ```reverse shell``` |
 
 ## Tools
 
