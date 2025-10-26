@@ -47,6 +47,13 @@ In each module I have learned a series of important skills for a job in cybersec
 | 5. Detection and Response | ```Security Information and Event Management (SIEM) tools``` ```Packet Analyzer``` ```Intrusion Detection Systems (IDS)``` |
 | 6. Automation with Python | ```Computer Programming``` ```Python Programming``` ```Coding``` ```PEP 8 style guide``` |
 
+On the other hand, in the walkthroughs I have learned;
+
+| Module | Skills learnt |
+| :---: | ------------- |
+| 1. Dawn | ```nmap``` ```gobuster``` ```netcat``` ```SUID``` |
+| 2. DriftingBlues6 | ```dirsearch``` ```zip2john``` ```johntheripper``` ```searchsploit``` |
+
 ## Tools
 
 Tools used in the course:
